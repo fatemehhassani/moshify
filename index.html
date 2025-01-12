@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body style="padding: 5rem">
     <a href="#" class="Link-arrow">Learn More</a>
@@ -335,7 +336,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, earum.</p>
       </header>
       <article class="grid grid--cols-2 feature">
-      <div class="feature__content">
+      <div class="feature__content"data-aos="fade-right">
         <span class="icon-container">
       <svg class="icon icon--primary">
         <use xlink:href="images/sprite.svg#computer"></use>
@@ -345,7 +346,7 @@
         <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis tempore esse explicabo non! Facilis eius labore, tempora iusto quibusdam debitis.</P>
         <a href="#" class="Link-arrow">Learn More</a>
       </div>
-      <picture>
+      <picture data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x"/>
         <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"/>
         <img class="feature__image"
@@ -629,5 +630,9 @@
         </ul>
       </section>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
